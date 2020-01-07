@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,400i,700,700i,900,900i&display=swap');
+@import 'variables';
+body {
+	font-family:$main_font;
+	z-index:0;
+	position:relative;
+	color: $font_color;
+	background:#FFF;
+	line-height:1.5em;
+	overflow-x:hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:$secondary_font;
+    font-weight:normal;
+    color:$heading_color;
+}
+.text-center{
+    text-align:center;
+}
+.text-left{
+    text-align:left;
+}
+.text-right{
+    text-align:right;
+}

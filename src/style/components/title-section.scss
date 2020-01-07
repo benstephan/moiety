@@ -1,0 +1,11 @@
+.title-section{
+    text-align:center;
+    margin-bottom:60px;
+    .bordered{
+        position:relative;
+        margin:20px auto;
+        width:60px;
+        height:3px;
+        background:$main_color;
+    }
+}

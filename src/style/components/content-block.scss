@@ -1,0 +1,19 @@
+#content-blocks{
+	.content-block:nth-child(even){
+		background:#EEE;
+		padding:60px 0;
+
+		.row{
+			flex-direction:row-reverse;
+			
+		}
+	}
+}
+.content-block{
+	width:100%;
+	margin-bottom:60px;
+
+	img{
+		@include box-shadow(0,0,40px,rgba(0,0,0,0.2));
+	}
+}

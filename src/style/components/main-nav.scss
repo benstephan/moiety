@@ -1,0 +1,81 @@
+#main-nav{
+
+	.bg-light, .bg-dark{
+		background:none !important;
+		@include transition (all .3s);
+	}
+	.navbar-brand{
+		@include transition(all .3s);
+
+		.logo0{enable-background:new;}
+		.logo1{fill:#FFFFFF;}
+		.logo2{fill:#0C1D2C;}
+
+		@media(min-width:$screen-md){
+			width:300px;
+		}
+		@media(max-width:$screen-md){
+			width:180px;
+		}
+	}
+	.navbar-collapse{
+		position: fixed;
+		height:100%;
+		top:0;
+	    padding-top: 69px; /* Height of navbar */
+	    bottom: 0;
+	    left: 100%;
+	    right:-300px;
+	    width: 300px;
+	    padding-right: 1rem;
+	    padding-left: 1rem;
+	    overflow-y: auto;
+	    background-color: $dark;
+	    @include transition(all .3s ease-in-out);
+	    align-items:start;
+		/*   Adds a subtle drop shadow   */
+		-moz-background-clip: padding;     /* Firefox 3.6 */
+		-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+		background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+		border-right:none;
+		a{
+			color:#FFF;
+		}
+		&.show{
+			right: 0;
+			left:calc(100% - 300px);
+		}
+	}
+	.navbar-toggler{
+		display:block;
+		z-index:999;
+		border:none;
+		font-size:14px;
+		color:#FFF;
+		&:before{
+			content:'Menu';
+			margin-right:16px;
+		}
+	}
+	.navbar-nav{
+		-ms-flex-direction: column;
+    	flex-direction: column;
+	}
+	.navbar-expand-lg{
+		justify-content:space-between;
+		flex-flow:initial;
+	}
+
+	&.scrolled{
+		.bg-light, .bg-dark{
+			background:$dark !important;
+		}
+		
+		.navbar-brand{
+			@media(min-width:$screen-md){
+				width:150px;
+			}
+		}	
+	}
+	
+}
