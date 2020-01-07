@@ -9,10 +9,10 @@ import {
 const ContentBlock = ({contentTopTitle, contentSubTitle, contentText, contentLink, contentImage, order}) => {  
 
   return (
-    <div class="content-block">
+    <div className="content-block">
       <Container>
-      <div class="row">
-        <div class="col-md-5">
+      <div className="row">
+        <div className="col-md-5">
           <img src={contentImage} alt={contentTopTitle + contentSubTitle} className="img-fluid" />
         </div>
         <div className="col-md-7 align-self-center">

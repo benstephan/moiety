@@ -12,8 +12,15 @@
 }
 .btn-primary{
 	background:$main_color;
-
+	color:#FFF !important;
 	&:hover{
 		background:darken($main_color, 15%);
+	}
+}
+.btn-secondary{
+	background:$secondary_color;
+	color:#FFF !important;
+	&:hover{
+		background:darken($secondary_color, 15%);
 	}
 }

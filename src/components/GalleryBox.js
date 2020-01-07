@@ -17,13 +17,7 @@ const iconList = Object
 library.add(...iconList)
 
 const GalleryBox = ({galleryLink, gallerySrc, galleryName, galleryTitle}) => {  
-  const state = { showMenu: false }
-
-  const toggleMenu = () => {
-    this.setState({
-      showMenu: !this.state.showMenu
-    })
-  }
+  
   return (
     <Col md="4">
       <div className="gallery-box">

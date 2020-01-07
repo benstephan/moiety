@@ -5,6 +5,7 @@ import {
   Container,
   Row
 } from 'reactstrap';
+import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import MainNavigation from './components/MainNavigation';
@@ -13,8 +14,27 @@ import ContentBlock from './components/ContentBlock';
 import TitleSection from './components/TitleSection';
 import FeaturedBlock from './components/FeaturedBlocks';
 import GalleryBox from './components/GalleryBox';
+import CallToAction from './components/CallToAction';
 
 function App() {
+  function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
+
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  $(window).scroll(function () {
+      $('.gallery-box, .featured-block, .title-section, .content-block').each(function () {
+          if (isScrolledIntoView(this) === true) {
+              $(this).addClass('visible');
+          }
+      });
+
+  });
   return (
     <div className="App">
       <MainNavigation />
@@ -37,6 +57,7 @@ function App() {
        </div>
        <div id="gallery-box">
          <Container fluid={true}>
+         <TitleSection sectionTitle="Gallery" sectionText="Every day, we'll curate new stories from Makers — whether they're long-time CEOs or solo creators — to give real, accessible insight." />
            <div className="gallery">
              <Row>
               <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryTitle="Actual look and feel design of the final graphical user interface (GUI)." galleryLink="/" />
@@ -50,6 +71,9 @@ function App() {
              </Row>
            </div>
          </Container>
+       </div>
+       <div id="call-to-actions">
+          <CallToAction />
        </div>
       </div>
     </div>

@@ -1,10 +1,20 @@
 #featured-blocks{
     padding:$spacer;
+    .row{
+        .col:nth-child(2) .featured-block.visible{animation-delay:.1s;}
+        .col:nth-child(3) .featured-block.visible{animation-delay:.2s;}
+    }
 }
 .featured-block{
     @include transition(all .3s);
     padding:35px 35px 20px 35px;
-
+    opacity:0;
+    
+    &.visible{
+        animation:FadeIn .4s linear;
+        animation-fill-mode: both;
+        opacity:1;
+    }
     &:hover{
         transform:translateY(-30px);
         @include box-shadow(0,0,30px,rgba(0,0,0,0.3));

@@ -8,10 +8,19 @@
 			
 		}
 	}
+	.content-block:nth-child(2).visible{animation-delay: .1s;}
+	.content-block:nth-child(3).visible{animation-delay: .2s;}
 }
 .content-block{
 	width:100%;
 	margin-bottom:60px;
+	opacity:0;
+	@include transition(all .3s);
+
+	&.visible{
+		animation:FadeIn .3s linear;
+		opacity:1;
+	}
 
 	img{
 		@include box-shadow(0,0,40px,rgba(0,0,0,0.2));
