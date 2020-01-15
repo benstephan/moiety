@@ -1,0 +1,22 @@
+#main-footer{
+
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding-top:40px;
+    background:#EEE;
+    color:#fff;
+    z-index:-1;
+    .main-footer__logo{
+        position:relative;
+        margin:20px auto;
+        max-width:300px;
+        width:95%;
+        padding-top:60px;
+        .logo0{enable-background:new;}
+        .logo1{fill:#0C1D2C;}
+        .logo2{fill:#FFFFFF;}
+    }
+    
+}

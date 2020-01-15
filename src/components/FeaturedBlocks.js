@@ -19,7 +19,7 @@ library.add(...iconList)
 const FeaturedBlock = ({featuredIcon, featuredTitle, featuredText, featuredLink}) => {  
 
   return (
-    <Col>
+    <Col md="4">
     <div className="featured-block">
       <a href={featuredLink} title={featuredTitle}>
         <div className="icon"><FontAwesomeIcon icon={featuredIcon} /></div>

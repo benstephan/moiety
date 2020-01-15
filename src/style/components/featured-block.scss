@@ -1,5 +1,6 @@
 #featured-blocks{
     padding:$spacer;
+    background:#EEE;
     .row{
         .col:nth-child(2) .featured-block.visible{animation-delay:.1s;}
         .col:nth-child(3) .featured-block.visible{animation-delay:.2s;}
@@ -14,10 +15,12 @@
         animation:FadeIn .4s linear;
         animation-fill-mode: both;
         opacity:1;
+        
     }
     &:hover{
         transform:translateY(-30px);
         @include box-shadow(0,0,30px,rgba(0,0,0,0.3));
+        background:#FFF;
     }
     .icon{
         position:relative;

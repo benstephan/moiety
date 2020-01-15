@@ -15,6 +15,8 @@ import TitleSection from './components/TitleSection';
 import FeaturedBlock from './components/FeaturedBlocks';
 import GalleryBox from './components/GalleryBox';
 import CallToAction from './components/CallToAction';
+import Article from './components/Article';
+import MainFooter from './components/Footer';
 
 function App() {
   function isScrolledIntoView(elem) {
@@ -56,7 +58,7 @@ function App() {
          </Container>
        </div>
        <div id="gallery-box">
-         <Container fluid={true}>
+         <Container>
          <TitleSection sectionTitle="Gallery" sectionText="Every day, we'll curate new stories from Makers — whether they're long-time CEOs or solo creators — to give real, accessible insight." />
            <div className="gallery">
              <Row>
@@ -75,7 +77,18 @@ function App() {
        <div id="call-to-actions">
           <CallToAction />
        </div>
+       <div id="articles">
+         <Container>
+         <TitleSection sectionTitle="Blog" sectionText="Every day, we'll curate new stories from Makers — whether they're long-time CEOs or solo creators — to give real, accessible insight." />
+           <Row>
+             <Article articleSrc="https://placehold.it/600x350" articleLink="/" articleTitle="This is the Title of the Article" articleText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed diam id magna fermentum dignissim vitae ut ipsum. Mauris egestas neque ut magna feugiat congue." articleDate="January 6th, 2020" />
+             <Article articleSrc="https://placehold.it/600x350" articleLink="/" articleTitle="This is the Title of the Article" articleText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed diam id magna fermentum dignissim vitae ut ipsum. Mauris egestas neque ut magna feugiat congue." articleDate="January 6th, 2020" />
+             <Article articleSrc="https://placehold.it/600x350" articleLink="/" articleTitle="This is the Title of the Article" articleText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed diam id magna fermentum dignissim vitae ut ipsum. Mauris egestas neque ut magna feugiat congue." articleDate="January 6th, 2020" />
+           </Row>
+         </Container>
+       </div>
       </div>
+      <MainFooter />
     </div>
   );
 }
