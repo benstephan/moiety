@@ -27,8 +27,8 @@
 	    left: 100%;
 	    right:-300px;
 	    width: 300px;
-	    padding-right: 1rem;
-	    padding-left: 1rem;
+	    padding-right: 0rem;
+	    padding-left: 0rem;
 	    overflow-y: auto;
 	    background-color: $dark;
 	    @include transition(all .3s ease-in-out);
@@ -59,7 +59,28 @@
 	}
 	.navbar-nav{
 		-ms-flex-direction: column;
-    	flex-direction: column;
+		flex-direction: column;
+		width:100%;
+	}
+	.dropdown-menu{
+		position: relative;
+		@include border-radius(0px);
+		background:rgba(255,255,255,0.2);
+		padding:0;
+
+		& > button, a{
+			color:#FFF;
+		}
+	}
+	.dropdown-item:focus, .dropdown-item:hover{
+		background:rgba(0,0,0,0.3);
+		color:$secondary_color;
+	}
+	.dropdown-toggle{
+		&:after{
+			float:right;
+			margin-top:13px;
+		}
 	}
 	.navbar-expand-lg{
 		justify-content:space-between;
@@ -77,5 +98,8 @@
 			}
 		}	
 	}
-	
+	.nav-link{
+		padding-left:10px;
+		padding-right:10px;
+	}
 }

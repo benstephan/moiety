@@ -86,7 +86,6 @@ const MainNavigation = (props) => {
                 <DropdownItem>
                   Option 2
                 </DropdownItem>
-                <DropdownItem divider />
                 <DropdownItem>
                   Reset
                 </DropdownItem>
