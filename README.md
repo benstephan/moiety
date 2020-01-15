@@ -1,5 +1,5 @@
 # moiety
-Moiety UI Kit for React and Bootstrap 4
+Moiety UI Kit for React and Bootstrap 4 (reactstrap)
 
 Quick Start
 
