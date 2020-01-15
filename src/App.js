@@ -62,14 +62,14 @@ function App() {
          <TitleSection sectionTitle="Gallery" sectionText="Every day, we'll curate new stories from Makers — whether they're long-time CEOs or solo creators — to give real, accessible insight." />
            <div className="gallery">
              <Row>
-              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryTitle="Actual look and feel design of the final graphical user interface (GUI)." galleryLink="/" />
-              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryTitle="Actual look and feel design of the final graphical user interface (GUI)." galleryLink="/" />
-              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryTitle="Actual look and feel design of the final graphical user interface (GUI)." galleryLink="/" />              
+              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryLink="/" />
+              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryLink="/" />
+              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryLink="/" />              
              </Row>
              <Row>
-              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryTitle="Actual look and feel design of the final graphical user interface (GUI)." galleryLink="/" />
-              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryTitle="Actual look and feel design of the final graphical user interface (GUI)." galleryLink="/" />
-              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryTitle="Actual look and feel design of the final graphical user interface (GUI)." galleryLink="/" />              
+              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryLink="/" />
+              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryLink="/" />
+              <GalleryBox gallerySrc="http://dev.steelehouse.com/codepen/game.jpg" galleryName="User Interface Design" galleryLink="/" />              
              </Row>
            </div>
          </Container>

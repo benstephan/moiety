@@ -18,5 +18,22 @@
         .logo1{fill:#0C1D2C;}
         .logo2{fill:#FFFFFF;}
     }
-    
+    .main-footer__nav{
+        a{
+            color:#666;
+            @include border-radius(5px);
+            @include transition(all .2s);
+            &:hover{
+                background:$main_color;
+                color:#FFF;
+                @include box-shadow(0,0,30px,rgba(0,0,0,0.4));
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+    p{
+        color:#666;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
 }

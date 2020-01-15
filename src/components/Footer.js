@@ -3,7 +3,10 @@ import {
   Container,
   Row,
   Col,
-  Button
+  Button, 
+  Nav, 
+  NavItem, 
+  NavLink
 } from 'reactstrap';
 
 const MainFooter = () => {  
@@ -35,6 +38,12 @@ const MainFooter = () => {
             <path className="logo2" d="m24.2 38.4c0 0.7 0.6 1.3 1.3 1.3 0.5 0 1-0.3 1.2-0.7l7.5-15.1c0.3-0.7 0.1-1.4-0.6-1.8-0.2-0.1-0.4-0.1-0.6-0.1h-6.7v-7.6c0-0.7-0.6-1.3-1.3-1.3-0.5 0-1 0.3-1.2 0.7l-7.5 15.1c-0.3 0.7-0.1 1.4 0.6 1.8 0.2 0.1 0.4 0.1 0.6 0.1h6.7v7.6z"/>
           </svg>
           </a>
+      </div>
+      <div className="main-footer__nav">
+      <Nav className="justify-content-center">
+        <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink href="#">Disabled Link</NavLink>
+      </Nav>
+      <p className="text-center">All rights are reserved © {(new Date().getFullYear())}, Moiety</p>
       </div>
       </Container>
     </div>
